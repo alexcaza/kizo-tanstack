@@ -1,4 +1,4 @@
-// app/routes/__root.tsx
+import { Nav } from '@/components/Nav'
 import {
     Outlet,
     ScrollRestoration,
@@ -28,6 +28,7 @@ export const Route = createRootRoute({
 function RootComponent() {
     return (
         <RootDocument>
+            <Nav />
             <Outlet />
         </RootDocument>
     )

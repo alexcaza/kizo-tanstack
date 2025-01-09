@@ -35,21 +35,7 @@ function Home() {
 
     return (
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-8">Welcome to Kizo</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link
-              to="/gifts"
-              className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition"
-            >
-              Manage Gifts
-            </Link>
-            <Link
-              to="/recipients"
-              className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition"
-            >
-              Manage Recipients
-            </Link>
-          </div>
+            <h2>This is the home page</h2>
         </div>
-      );
+    );
 }
