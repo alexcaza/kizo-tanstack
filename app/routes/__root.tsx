@@ -1,4 +1,6 @@
-import { Nav } from '@/components/Nav'
+import { Nav } from '@/app/components/Nav'
+import kizoCSS from '@/lib/styles/kizo.css?url'
+
 import {
     Outlet,
     ScrollRestoration,
@@ -18,8 +20,11 @@ export const Route = createRootRoute({
                 content: 'width=device-width, initial-scale=1',
             },
             {
-                title: 'TanStack Start Starter',
+                title: 'Kizo',
             },
+        ],
+        links: [
+            { rel: 'stylesheet', href: kizoCSS },
         ],
     }),
     component: RootComponent,
