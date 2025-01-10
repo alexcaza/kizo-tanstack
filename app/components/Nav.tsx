@@ -17,6 +17,12 @@ export function Nav() {
                 >
                     Manage Recipients
                 </Link>
+                <Link
+                    to="/login"
+                    className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition"
+                >
+                    Login
+                </Link>
             </div>
         </>
     )

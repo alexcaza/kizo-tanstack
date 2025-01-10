@@ -1,5 +1,22 @@
 {
+  "include": [
+    "**/*.tsx",
+    "**/*.ts"
+  ],
   "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": true,
     "jsx": "react-jsx",
     "moduleResolution": "Bundler",
     "module": "ESNext",

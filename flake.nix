@@ -16,13 +16,8 @@
       in {
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [
-            bun
-            playwright-driver.browsers
+            nodejs_23
           ];
-
-          shellHook = ''
-            export PLAYWRIGHT_BROWSERS_PATH=${pkgs.playwright-driver.browsers}
-          '';
         };
       }
     );
