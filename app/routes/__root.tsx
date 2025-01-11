@@ -11,7 +11,7 @@ import {
 import { Meta, Scripts } from '@tanstack/start'
 import type { ReactNode } from 'react'
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+export const Route = createRootRouteWithContext<{ queryClient: QueryClient, isAuthed: boolean }>()({
     head: () => ({
         meta: [
             {

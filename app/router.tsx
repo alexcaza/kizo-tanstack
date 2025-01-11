@@ -8,7 +8,7 @@ export function createRouter() {
 
     const router = createTanStackRouter({
         routeTree,
-        context: { queryClient },
+        context: { queryClient, isAuthed: false },
         defaultPreload: 'intent',
         defaultErrorComponent: () => <div>Error</div>,
         defaultNotFoundComponent: () => <div>Not Found</div>,
